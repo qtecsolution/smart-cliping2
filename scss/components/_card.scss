@@ -299,3 +299,138 @@
         max-width: 100%;
     }
 }
+
+.plan {
+    background: $white;
+    @include radius(24);
+    filter: $drop-shadow-1;
+    box-shadow: $box-shadow-3;
+    overflow: hidden;
+    @include h100;
+
+    &-header {
+        @include flex-center-column;
+        gap: length(4);
+        text-align: center;
+        @include w100;
+        
+        .titlebox {
+            padding: length(12);
+            @include flex-center;
+            text-align: center;
+            @include w100;
+
+            .plantitle {
+                @include privacyTitle;
+                color: $white;
+                line-height: 1.3;
+            }
+        }
+
+        .planprice {
+            @include flex-center;
+            gap: length(8);
+            @include pricingText;
+
+            sup {
+                @include superText;
+                color: $secondary;
+                margin-top: length(-14);
+                letter-spacing: length(1)
+            }
+        }
+    }
+
+    &-body {
+        padding: length(24);
+
+        .planlist {
+            @include list-vertical;
+            gap: length(20);
+
+            &-item {
+                @include priceText;
+                @include flex-center-vert;
+                gap: length(8);
+            }
+
+            .previousplan {
+                color: $primary;
+            }
+
+            .rightplan {
+                color: $textPrimary;
+            }
+
+            .delplan {
+                color: $grayText;
+            }
+        }
+    }
+
+    &.basic {
+        .plan-header {
+            .titlebox {
+                background: $primary;
+            }
+        }
+    }
+
+    &.clipping {
+        .plan-header {
+            .titlebox {
+                background: $clippingBg;
+            }
+        }
+    }
+
+    &.standard {
+        .plan-header {
+            .titlebox {
+                background: $primary;
+            }
+        }
+    }
+
+    &.ultimite {
+        .plan-header {
+            .titlebox {
+                background: $primary;
+            }
+        }
+    }
+}
+
+.cardnav {
+    @include flex-center-vert;
+    gap: length(8);
+    cursor: pointer;
+
+    @include breakpoint(mobile768) {
+        gap: length(16);
+    }
+
+    &-cap {
+        @include square(length(32));
+        @include flex-center;
+        overflow: hidden;
+
+        @include breakpoint(mobile768) {
+            @include square(length(48));
+        }
+
+        img {
+            @include wh100;
+            object-fit: cover;
+        }
+    }
+
+    &-title {
+        @include smallTexts;
+        color: $textSecondary;
+
+        @include breakpoint(mobile768) {
+            @include priceText;
+        }
+    }
+}

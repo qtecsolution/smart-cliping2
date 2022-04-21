@@ -1,36 +1,44 @@
 .dd-container {
-    width: length(70) !important;
+    width: length(64) !important;
 
     .dd-select {
-        width: length(70) !important;
+        width: length(64) !important;
         border: none;
         background: $white;
 
         .dd-selected {
-            padding: length(8) !important;
+            padding: length(0) !important;
             background: $white;
 
             .dd-selected-image {
                 width: length(30) !important;
-                height: length(21) !important;
+                height: length(20) !important;
                 float: none !important;
                 max-width: 100% !important;
-                margin: 0 !important;
+                margin: auto !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
             }
         }
     }
 
+    .dd-pointer {
+        right: 0;
+    }
+
     .dd-options {
-        width: length(70) !important;
+        width: length(40) !important;
         border: 0;
+        margin-left: length(14);
 
         .dd-option {
-            padding: length(8) 0 !important;
+            padding: length(5) 0 !important;
             @include flex-center;
 
             .dd-option-image {
                 width: length(30) !important;
-                height: length(21) !important;
+                height: length(20) !important;
                 margin-right: 0 !important;
                 float: none;
             }

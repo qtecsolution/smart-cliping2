@@ -1,0 +1,19 @@
+.smartcrumb {
+    padding: length(40) length(0);
+
+    .breadcrumb {
+        &-item {
+            @include priceText;
+            color: $textSecondary;
+            
+            a {
+                @include priceText;
+                color: $textSecondary;
+            }
+
+            &.active {
+                color: $secondary;
+            }
+        }
+    }
+}

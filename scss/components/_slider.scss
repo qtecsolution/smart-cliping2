@@ -1,0 +1,98 @@
+.portfolioslider {
+    padding: length(48) length(0);
+    overflow: hidden;
+
+    &-content {
+        @include flex-column;
+        gap: length(64);
+    }
+}
+
+.slick-list {
+    padding: 0 !important;
+}
+
+.slick-prev {
+    left: calc(50% - 2rem);
+    right: auto;
+    @include transform(translateX(-50%));
+}
+
+.slick-next {
+    right: calc(50% - 2rem);
+    left: auto;
+    @include transform(translateX(-50%));
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 180%;
+    @include flex-center;
+    @include square(length(32));
+    overflow: hidden;
+    @include transparent-button;
+
+    svg {
+        @include wh100;
+
+        path {
+            fill: $secondary;
+        }
+    }
+
+    @include hover {
+        svg {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.baguetteBox-button {
+    @include transparent-button;
+    color: transparent;
+    font-size: 0;
+
+    @include hover {
+        background: transparent;
+
+        svg {
+            polyline {
+                stroke: $secondary;
+            }
+        }
+    }
+
+    &:focus {
+        background: transparent;
+
+        svg {
+            svg {
+                polyline {
+                    stroke: $secondary;
+                }
+            }
+        }
+    }
+}
+
+#close-button {
+    svg {
+        @include transitiontransform;
+        
+        g {
+            @include transitions;
+        }
+    }
+
+    @include hover {
+        svg {
+            @include transform(rotate(90deg));
+            
+            g {
+                stroke: $textDanger;
+            }
+        }
+    }
+}

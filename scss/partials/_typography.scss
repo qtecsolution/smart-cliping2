@@ -3,7 +3,7 @@
 \*------------------------------------*/
 $basefont: 'Poppins';
 
-$font-sizes: ('s12': 12, 's14': 14, 'base': 16, 's18': 18, 's20': 20, 's22': 22, 's24': 24, 's25': 25, 's26': 26, 's28': 28, 's30': 30, 's34': 34, 's35': 35, 's36': 36, 's45': 45);
+$font-sizes: ('s12': 12, 's14': 14, 's15': 15, 'base': 16, 's18': 18, 's20': 20, 's22': 22, 's24': 24, 's25': 25, 's26': 26, 's28': 28, 's30': 30, 's34': 34, 's35': 35, 's36': 36, 's45': 45, 's48': 48);
 $font-styles: ('normal': normal, 'italic': italic, 'oblique': oblique);
 $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 
@@ -55,6 +55,16 @@ $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 /*------------------------------------*\
             ALL HEADINGS OF SITE
 \*------------------------------------*/
+
+@mixin pricingText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s48'),
+		weight('semibold'),
+		line-height(70, size('s48')));
+}
+
+
 @mixin mainheadingblack {
 	@include font(family($basefont),
 		style('normal'),
@@ -221,6 +231,14 @@ $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 	color: $textPrimary;
 }
 
+@mixin portfText {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('normal'),
+		line-height(24, size('base')));
+}
+
 @mixin buttonText {
 	@include font(family($basefont),
 		style('normal'),
@@ -326,6 +344,14 @@ $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 	color: $white;
 }
 
+@mixin smallTexts {
+	@include font(family($basefont),
+		style('normal'),
+		size('s12'),
+		weight('normal'),
+		line-height(18, size('s12')));
+}
+
 @mixin packageText {
 	@include font(family($basefont),
 		style('normal'),
@@ -361,6 +387,15 @@ $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 		size('s14'),
 		weight('medium'),
 		line-height(26, size('s14')));
+	color: $primary;
+}
+
+@mixin superText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s12'),
+		weight('medium'),
+		line-height(18, size('s12')));
 	color: $primary;
 }
 
@@ -411,4 +446,12 @@ $font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
 		line-height(31, size('base')));
 	color: $textDanger;
 	text-transform: uppercase;
+}
+
+@mixin priceText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s15'),
+		weight('normal'),
+		line-height(15, size('s15')));
 }

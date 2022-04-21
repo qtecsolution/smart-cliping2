@@ -96,3 +96,58 @@
         margin-bottom: length(24);
     }
 }
+
+.portfolioitem {
+    padding-top: length(24);
+    @include flex-column;
+    gap: length(24);
+
+    &-header {
+        @include flex-center;
+        text-align: center;
+
+        p {
+            @include portfText;
+            color: $textSecondary;
+            cursor: text;
+
+            a {
+                @include portfText;
+                color: $border-2;
+                @include transitions;
+
+                @include hover {
+                    color: $textSecondary;
+                }
+            }
+        }
+
+        a {
+            @include portfText;
+            color: $border-2;
+            @include transitions;
+
+            @include hover {
+                color: $textSecondary;
+            }
+        }
+    }
+
+    &-body {
+        .portfoliolink {
+            @include flex-center;
+            @include w100;
+            overflow: hidden;
+
+            img {
+                @include wh100;
+                object-fit: cover;
+                @include transitiontransform;
+
+                @include hover {
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+    }
+}

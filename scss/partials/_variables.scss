@@ -10,3 +10,23 @@ $box-shadow-2: .625rem 2.1875rem 2.1875rem $shadow-2;
 $box-shadow-3: .625rem .625rem 1.5625rem $shadow-4;
 $blog-shadow: drop-shadow(.625rem .625rem 2.1875rem $shadow-3);
 $button-shadow: .625rem .625rem 2.8125rem $shadow-button;
+
+// /**=====================================================**
+//                         SHADOWS
+// =======================================================**/
+// $shadow-1: rgba(12, 26, 75, 0.24);
+// $shadow-2: rgba(50, 50, 71, 0.05);
+// $shadow-3: rgba(12, 26, 75, 0.1);
+// $shadow-4: rgba(20, 37, 63, 0.06);
+// $shadow-5: rgba(50, 50, 71, 0.08);
+
+// /**=====================================================**
+//                         BOX-SHADOWS
+// =======================================================**/
+// $box-shadow-1: 0 0 .0625rem $shadow-1, 0 .1875rem .5rem -0.0625rem $shadow-2;
+// $box-shadow-2: 0 .1875rem .5rem -0.0625rem $shadow-2;
+$drop-shadow-1: drop-shadow(0 0 .0625rem $shadow-1);
+$close-shadow: 0 0 .0625rem $shadow-3, 0 .625rem 1rem $shadow-4;
+
+// $tab-shadow: 0 .25rem 1.25rem -0.125rem $shadow-5;
+// $tab-shade: drop-shadow(0 0 .0625rem $shadow-3);

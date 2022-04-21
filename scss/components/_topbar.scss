@@ -31,6 +31,15 @@
                 @include flex-center-vert;
                 gap: length(10);
 
+                .icon {
+                    @include square(length(20));
+                    @include flex-center;
+
+                    svg {
+                        @include wh100;
+                    }
+                }
+
                 .text {
                     @include topBarLink;
                     color: $white;
@@ -43,6 +52,7 @@
 
                     @include breakpoint(phone414) {
                         @include mobileTopbarText;
+                        font-size: length(11.2);
                     }
                 }
 
