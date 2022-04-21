@@ -1,0 +1,167 @@
+// ABOUT BANNER
+.about-banner {
+    background: url(../images/about/about-banner/about-banner.svg) center center/cover;
+    padding: length(80) length(0);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .about-titles {
+            margin-bottom: length(10);
+
+            .title {
+                @include mainheadingblack;
+                color: $white;
+                text-align: center;
+    
+                @include breakpoint(tablet991) {
+                    @include cardheading;
+                }
+            }
+
+            .subtitle {
+                @include subTitle;
+                text-align: center;
+
+                @include breakpoint(tablet991) {
+                    @include bannerText;
+                }
+            }
+        }
+
+        .about-text {
+            @include bannerText;
+            letter-spacing: length(0.48);
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// ABOUT US
+.about-us {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .about {
+        @include flex-column;
+        gap: length(20);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        @include breakpoint(phone768) {
+            gap: length(10);
+        }
+
+        &-title {
+            @include subheading;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        &-text {
+            @include bodyFont;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .about-thumbnail {
+        @include radius(5);
+        overflow: hidden;
+
+        img {
+            @include wh100;
+            object-fit: cover;
+            @include transitions;
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+    }
+}
+
+// OUR MISSION
+.our-mission {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .mission-thumbnail {
+        @include radius(5);
+        overflow: hidden;
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        img {
+            @include wh100;
+            object-fit: cover;
+            @include transitions;
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+    }
+
+    .mission {
+        @include flex-column;
+        gap: length(20);
+
+        @include breakpoint(phone768) {
+            gap: length(10);
+        }
+
+        &-title {
+            @include subheading;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        &-text {
+            @include bodyFont;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+}

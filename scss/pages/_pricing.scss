@@ -1,0 +1,190 @@
+// PRICING
+.pricing {
+    margin-bottom: length(150);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(75);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(60);
+
+        .title {
+            @include contactTitle;
+            color: $textSecondary;
+            text-align: center;
+        }
+
+        .pricing-box {
+            @include flex-center-vert;
+            @include radius(10);
+            @include w100;
+            overflow: hidden;
+
+            @include breakpoint(tablet991) {
+                flex-direction: column;
+            }
+            
+            .package {
+                width: 33.33%;
+                text-align: center;
+
+                @include breakpoint(tablet991) {
+                    width: 100%;
+                    @include radius(10);
+                }
+
+                &-header {
+                    padding: length(21);
+
+                    .title {
+                        @include packageText;
+                        color: $white;
+                    }
+                }
+
+                &-body {
+                    .package-info {
+                        padding: length(21);
+                        @include border-single(bottom, solid, 1, $package-border);
+                        @include packageText;
+                        color: $textSecondary;
+                        max-width: 99%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        @include breakpoint(desktop1199) {
+                            @include topBarLink;
+                            font-weight: 600;
+                            color: $textSecondary;
+                        }
+                    }
+                }
+            }
+
+            .basic {
+                .package-header {
+                    @include setBgColor($primary-package, $white);
+                }
+
+                .package-body {
+                    background: $white;
+                }
+            }
+
+            .standard {
+                .package-header {
+                    @include setBgColor($standard-package, $white);
+                }
+
+                .package-body {
+                    background: $standard-package;
+                }
+            }
+
+            .premium {
+                .package-header {
+                    @include setBgColor($primary, $white);
+                }
+
+                .package-body {
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
+
+// PRICING INFO
+.pricing-info {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-column;
+        gap: length(24);
+
+        .titlebox {
+            @include flex-center-vert;
+            @include h100;
+
+            @include breakpoint(tablet991) {
+                margin-bottom: length(24);
+            }
+
+            .title {
+                @include packageTitle;
+            }
+        }
+
+        .pricing-thumbnail {
+            @include radius(5);
+            overflow: hidden;
+            @include wh100;
+
+            @include breakpoint(tablet991) {
+                margin-bottom: length(24);
+            }
+
+            img {
+                @include wh100;
+                @include transitions;
+                @include hover {
+                    @include transform(scale(1.05));
+                }
+            }
+        }
+    }
+}
+
+// PRICING HELP
+.pricing-help {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .helpbox {
+        padding: length(60);
+        @include flex-center-column;
+        // gap: length(20);
+        @include setBgColor($primary, $white);
+        @include radius(10);
+        text-align: center;
+        overflow: hidden;
+
+        .title {
+            @include contactTitle;
+            color: $white;
+
+            @include breakpoint(phone500) {
+                font-size: length(20);
+            }
+        }
+
+        .text {
+            @include helpText;
+
+            @include breakpoint(phone500) {
+                font-size: length(16);
+            }
+
+            .link {
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: underline;
+                @include transitions;
+                
+                @include hover {
+                    color: rgba($white, 0.75);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

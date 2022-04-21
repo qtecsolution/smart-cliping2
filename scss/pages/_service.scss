@@ -1,0 +1,278 @@
+// SERVICE BANNER
+.service-banner {
+    background: url(../images/service/service-banner/service-banner.svg) center center/cover;
+    padding: length(60) length(0) length(90);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .service-title {
+            @include mainheadingblack;
+            color: $white;
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .service-text {
+            @include bannerText;
+            letter-spacing: length(0.48);
+            text-align: center;
+            margin-bottom: length(34);
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// SERVICE QUALITY
+.service-quality {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .qualitybox {
+        @include radius(5);
+        box-shadow:  $box-shadow-3;
+        overflow: hidden;
+
+        img {
+            @include wh100;
+            object-fit: cover;
+            @include transitions;
+
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+
+    .qualitydetails {
+        padding-left: length(26);
+        @include flex-column;
+        gap: length(15);
+
+        .title {
+            @include subheading;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+
+            @include breakpoint(phone500) {
+                text-align: center;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+            margin-bottom: length(20);
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+                text-align: center;
+            }
+        }
+
+        .service {
+            max-width: length(260);
+
+            @include breakpoint(phone500) {
+                margin: 0 auto;
+            }
+        }
+
+        @include breakpoint(tablet991) {
+            padding-left: length(0);
+        }
+    }
+}
+
+// SERVICE SLIDER
+.service-slider {
+    margin-bottom: length(160);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(80);
+    }
+
+    &-content {
+        @include flex-column;
+        gap: length(125);
+        margin-bottom: length(60);
+    
+        @include breakpoint(tablet991) {
+            gap: length(32);
+            margin-bottom: length(20);
+        }
+
+        @include breakpoint(phone768) {
+            margin-bottom: length(30);
+            gap: length(0);
+            
+            .card-product {
+                margin-bottom: length(30);
+            }
+        }
+    }
+}
+
+// SERVICE INQUIRE
+.service-inquire {
+    margin-bottom: length(80);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(40);
+    }
+
+    .inquire {
+        @include flex-column;
+        gap: length(20);
+
+        &-titles {
+            @include flex-column;
+            gap: length(15);
+
+            .title {
+                @include subheading;
+    
+                @include breakpoint(tablet991) {
+                    @include cardheading;
+                }
+    
+                @include breakpoint(phone500) {
+                    text-align: center;
+                }
+            }
+
+            .subtitle {
+                @include sectionBadgeText;
+                color: $black;
+    
+                @include breakpoint(phone500) {
+                    @include bodyFont;
+                    color: $black;
+                    text-align: center;
+                }
+            }
+        }
+
+        &-text {
+            @include bodyFont;
+            margin-bottom: length(30);
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+                text-align: center;
+            }
+        }
+
+        &-now {
+            @include breakpoint(phone500) {
+                @include flex-center;
+            }
+        }
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+
+    .inquire-thumbnail {
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            @include wh100;
+            @include transitions;
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+    }
+}
+
+.service-precision {
+    background: $grayBg;
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .precision-thumbnail {
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            @include wh100;
+            @include transitions;
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+
+    .precision {
+        height: 100%;
+        @include flex-column;
+        justify-content: center;
+        
+        .title {
+            @include subheading;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+
+            @include breakpoint(phone500) {
+                text-align: center;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+            margin-bottom: length(30);
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+                text-align: center;
+            }
+        }
+    }
+}

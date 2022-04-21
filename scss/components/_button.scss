@@ -1,0 +1,182 @@
+.btn-clip {
+    @include fontButton;
+    @include radius(5);
+    @include flex-center;
+    text-align: center;
+    @include transitions;
+}
+
+.home-badge {
+    padding: length(5.6) length(32);
+    @include flex-center;
+    @include border(solid, 1, $primary);
+    @include radius(5);
+    @include sectionBadgeText;
+    text-align: center;
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(45);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-banner {
+    padding: length(10) length(58);
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(32);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-banner-transparent {
+    padding: length(8) length(30);
+    @include radius(5);
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(32);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-register {
+    width: length(180);
+    height: length(55);
+    padding: length(8) length(32);
+
+    @include breakpoint(phone500) {
+        padding: length(8) length(32);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-service {
+    padding: length(8) length(37);
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(28);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-gallery {
+    padding: length(8) length(33);
+
+    @include breakpoint(desktop1199) {
+        padding: length(8) length(20);
+    }
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(24);
+    }
+
+    @include breakpoint(phone500) {
+        @include buttonSmallText;
+    }
+}
+
+.btn-get {
+    padding: length(8) length(33);
+    max-width: length(220);
+
+    @include breakpoint(phone500) {
+        padding: length(8) length(32);
+        @include buttonSmallText;
+    }
+}
+
+.btn-test {
+    @include w100;
+    padding: length(10);
+    text-transform: uppercase;
+
+    @include breakpoint(phone500) {
+        padding: length(8);
+        @include buttonSmallText;
+    }
+}
+
+.btn-create {
+    @include w100;
+    height: length(40);
+}
+
+.btn-text {
+    color: $primary;
+    @include textButton;
+    @include transitions;
+
+    @include hover {
+        color: $secondary;
+    }
+}
+
+.btn-bordered {
+    @include border(solid, 1, $primary);
+    @include setBgColor($white, $primary);
+
+    @include hover {
+        @include setBgColor($primary, $white);
+    }
+}
+
+.btn-fill {
+    @include setBgColor($primary, $white);
+
+    @include hover {
+        @include setBgColor($secondary, $white);
+    }
+}
+
+.btn-fill-transparent {
+    @include setBgColor(rgba($color: $primary, $alpha: 0.7), $white);
+
+    @include hover {
+        @include setBgColor(rgba($color: $secondary, $alpha: 0.7), $white);
+    }
+}
+
+.btn-fill-white {
+    @include setBgColor($white, $textSecondary);
+
+    @include hover {
+        @include setBgColor($textSecondary, $white);
+    }
+}
+
+.btn-trail {
+    box-shadow: $button-shadow;
+}
+
+.btn-view {
+    padding: length(8) length(30);
+    @include border(solid, 1, $primary);
+    @include transitions;
+    @include radius(25);
+    @include topBarLink;
+    @include setBgColor($white, $primary);
+
+    @include breakpoint(tablet991) {
+        padding: length(8) length(20);
+        font-size: length(12);
+    }
+
+    @include hover {
+        @include setBgColor($primary, $white);
+    }
+}

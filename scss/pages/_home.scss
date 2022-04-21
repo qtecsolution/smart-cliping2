@@ -1,0 +1,648 @@
+// HOME BANNER
+.home-banner {
+    padding: length(10) length(0) length(100);
+
+    @include breakpoint(tablet991) {
+        padding: length(35) length(0) length(50);
+    }
+
+    .banner-content {
+        height: 100%;
+        @include flex-center-column;
+        align-items: flex-start;
+        gap: length(60);
+
+        @include breakpoint(tablet991) {
+            gap: length(20);
+            margin-bottom: length(60);
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .content-head {
+            @include flex-column;
+            gap: length(15);
+
+            .title {
+                @include mainheadingblack;
+                color: $textSecondary;
+
+                @include breakpoint(tablet991) {
+                    @include cardheading;
+                    text-align: center;
+                }
+            }
+
+            .text {
+                @include bodyFont;
+
+                @include breakpoint(tablet991) {
+                    @include topBarLink;
+                    color: $textSecondary;
+                    text-align: center;
+                }
+
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+        }
+
+        .content-buttons {
+            @include flex-center-vert;
+            gap: length(40);
+
+            @include breakpoint(tablet991) {
+                gap: length(20);
+            }
+        }
+    }
+
+    .banner {
+        .beforeAfter {
+            // width: length(600);
+            // height: length(400);
+
+            @include breakpoint(tablet991) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// HOME PRICING
+.home-pricing {
+    background: $grayBg;
+    padding: length(60) length(0);
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .pricing-content {
+        @include flex-column;
+        gap: length(20);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(60);
+            align-items: center;
+        }
+
+        .pricing-title {
+            @include homePricingHeading;
+
+            @include breakpoint(tablet991) {
+                text-align: center;
+            }
+
+            .titletext {
+                color: $textDanger;
+            }
+        }
+
+        .pricing-text {
+            @include homePricingText;
+
+            @include breakpoint(tablet991) {
+                text-align: center;
+            }
+        }
+    }
+
+    .pricing-buttons {
+        @include flex-center-vert;
+        gap: length(14);
+        height: 100%;
+
+        @include breakpoint(tablet991) {
+            gap: length(20);
+            justify-content: center;
+        }
+    }
+}
+
+// HOME SERVICES
+.home-services {
+    margin-bottom: length(80);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(40);
+    }
+
+    .service-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(30);
+        }
+
+        .service-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        .service-text {
+            @include bodyFont;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .solution-card {
+        margin-bottom: length(24);
+    }
+}
+
+// HOME PORTFOLIO
+.home-portfolio {
+    background: $grayBg;
+    padding: length(80) length(0) length(20);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0) length(20);
+    }
+
+    .portfolio-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(30);
+        }
+
+        .portfolio-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        .portfolio-text {
+            @include bodyFont;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .card-product {
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+}
+
+// HOME PARTNER
+.home-partner {
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .partner-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .partner-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        .partner-text {
+            @include bodyFont;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .details {
+        @include flex-center;
+        gap: length(30);
+        flex-wrap: wrap;
+
+        @include breakpoint(tablet991) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .divider {
+            margin-top: length(-68);
+
+            @include breakpoint(tablet991) {
+                margin-top: length(0);
+
+                svg {
+                    @include transform(rotate(90deg));
+                }
+            }
+        }
+    }
+}
+
+// HOME VIDEO
+.home-video {
+    background: $grayBg;
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .details {
+        @include flex-column;
+        gap: length(16);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+
+            @include breakpoint(tablet991) {
+                text-align: center;
+            }
+        }
+
+        .title {
+            @include subheading;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+            margin-bottom: length(34);
+
+            @include breakpoint(tablet991) {
+                text-align: center;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+
+        .trial {
+            @include breakpoint(tablet991) {
+                @include flex-center;
+            }
+        }
+    }
+}
+
+// HOME SERVICE
+.home-service {
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .service-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .service-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+    }
+
+    .servicebox {
+        margin-bottom: length(80);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+
+    .servicethumb {
+        @include breakpoint(tablet991) {
+            order: 0;
+        }
+    }
+
+    .servicedetail {
+        @include breakpoint(tablet991) {
+            order: 1;
+        }
+    }
+
+    .service-thumbnail {
+        width: 100%;
+        @include radius(5);
+        overflow: hidden;
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        img {
+            @include transitions;
+            width: 100%;
+
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+    }
+
+    .services {
+        @include flex-column;
+        gap: length(50);
+        height: 100%;
+
+        .service {
+            @include flex-column;
+            gap: length(20);
+
+            @include breakpoint(phone500) {
+                gap: length(10);
+            }
+
+            .title {
+                @include cardheading;
+                font-weight: 600;
+                color: $primary;
+            }
+
+            .text {
+                @include bodyFont;
+
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+        }
+    }
+}
+
+// HOME ADVANTAGE
+.home-advantages {
+    background: $grayBg;
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .advantages-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .advantages-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+    }
+
+    .card-advantage {
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+}
+
+// HOME BLOG
+.home-blog {
+    padding: length(80) length(0);
+    position: relative;
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .blog-header {
+        @include flex-between;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        @include breakpoint(phone768) {
+            flex-direction: column;
+        }
+
+        .header-left {
+
+            @include breakpoint(phone768) {
+                .home-badge {
+                    margin: 0 auto;
+                }
+            }
+
+            .home-badge {
+                max-width: length(180);
+                margin-bottom: length(20);
+            }
+
+            .blog-title {
+                @include subheading;
+
+                @include breakpoint(phone768) {
+                    font-size: length(32);
+                    margin: length(12) length(0);
+                    text-align: center;
+                }
+
+                @include breakpoint(phone500) {
+                    @include cardheading;
+                }
+            }
+        }
+
+        .header-right {
+            @include flex-center-vert;
+
+            @include breakpoint(tablet991) {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .owl-nav {
+        margin-top: 0;
+        position: absolute;
+        top: length(-146);
+        right: length(190);
+        display: block !important;
+
+        @include breakpoint(tablet991) {
+            top: length(-150);
+        }
+
+        @include breakpoint(phone768) {
+            top: length(-80);
+            right: 0;
+        }
+
+        // @include breakpoint(phone414) {
+        //     top: length(-145);
+        // }
+
+        // @include breakpoint(mobile400) {
+        //     top: length(-78);
+        // }
+
+        .owl-prev,
+        .owl-next {
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
+
+// HOME STRATEGY
+.home-strategy {
+    background: $grayBg;
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .strategy-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .strategy-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+    }
+
+    .card-strategy {
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+    }
+}
+
+// HOME CLIENT
+.home-client {
+    padding: length(80) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(40) length(0);
+    }
+
+    .client-header {
+        @include flex-center-column;
+        gap: length(20);
+        margin-bottom: length(60);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .client-title {
+            @include subheading;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+    }
+
+    .owl-item {
+        padding: length(0) length(80);
+        @include flex-center;
+        @include radius(10);
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+
+        &.active {
+            background: $white;
+            box-shadow: $box-shadow-2;
+        }
+    }
+}
+
+.owl-stage {
+    padding: 0 0 length(32);
+}
+
+.plyr__poster {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.plyr {
+    @include radius(10);
+}
+
+#portfolio,
+#service,
+#process,
+#blog {
+    padding: length(130) length(0);
+}

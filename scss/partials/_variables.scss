@@ -1,0 +1,12 @@
+$time: 350ms;
+$shadow-1: rgba(20, 121, 68, 0.08);
+$shadow-2: rgba(0, 0, 0, 0.04);
+$shadow-3: rgba(20, 121, 68, 0.12);
+$shadow-4: rgba(0, 0, 0, 0.05);
+$shadow-button: rgba(0, 174, 239, 0.2);
+
+$box-shadow-1: .625rem .625rem 2.1875rem $shadow-1;
+$box-shadow-2: .625rem 2.1875rem 2.1875rem $shadow-2;
+$box-shadow-3: .625rem .625rem 1.5625rem $shadow-4;
+$blog-shadow: drop-shadow(.625rem .625rem 2.1875rem $shadow-3);
+$button-shadow: .625rem .625rem 2.8125rem $shadow-button;

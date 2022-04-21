@@ -1,0 +1,75 @@
+.topbar {
+    height: length(50);
+    @include flex-center;
+    background: $primary;
+    position: relative;
+    top: 0;
+    z-index: 1200;
+
+    @include breakpoint(tablet991) {
+        z-index: 500;
+    }
+
+    &-content {
+        @include flex-between;
+
+        .contactlist,
+        .topbarlist {
+            @include list-horizontal;
+        }
+
+        .contactlist {
+            gap: length(60);
+
+            @include breakpoint(tablet991) {
+                justify-content: space-between;
+                width: 100%;
+                gap: length(20);
+            }
+
+            &-link {
+                @include flex-center-vert;
+                gap: length(10);
+
+                .text {
+                    @include topBarLink;
+                    color: $white;
+                    @include transitions;
+
+                    @include breakpoint(phone500) {
+                        @include homeBlogCardDateTime;
+                        color: $white;
+                    }
+
+                    @include breakpoint(phone414) {
+                        @include mobileTopbarText;
+                    }
+                }
+
+                @include hover {
+                    .text {
+                        color: rgba($white, 0.75);
+                    }
+                }
+            }
+        }
+
+        .topbarlist {
+            gap: length(32);
+
+            @include breakpoint(tablet991) {
+                display: none;
+            }
+
+            &-link {
+                @include topBarLink;
+                color: $white;
+                @include transitions;
+
+                @include hover {
+                    color: rgba($white, 0.75);
+                }
+            }
+        }
+    }
+}

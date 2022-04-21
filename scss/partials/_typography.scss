@@ -1,0 +1,414 @@
+/*------------------------------------*\
+    // FONT STYLE VARIABLES
+\*------------------------------------*/
+$basefont: 'Poppins';
+
+$font-sizes: ('s12': 12, 's14': 14, 'base': 16, 's18': 18, 's20': 20, 's22': 22, 's24': 24, 's25': 25, 's26': 26, 's28': 28, 's30': 30, 's34': 34, 's35': 35, 's36': 36, 's45': 45);
+$font-styles: ('normal': normal, 'italic': italic, 'oblique': oblique);
+$font-weights: ('normal': normal, 'medium': 500, 'semibold': 600, 'bold': 700);
+
+
+/*------------------------------------*\
+    // FONT STYLE FUNCTIONS
+\*------------------------------------*/
+
+// SET FONT-FAMILY
+@function family($font-family) {
+	@return inspect($value: $font-family);
+}
+
+// SET FONT-STYLE
+@function style($font-style) {
+	@return map-get($font-styles, $font-style);
+}
+
+// SET FONT-STYLE
+@function size($font-size) {
+	@return map-get($font-sizes, $font-size);
+}
+
+// SET FONT-WEIGHT
+@function weight($font-weight) {
+	@return map-get($font-weights, $font-weight);
+}
+
+// SET LINE-HEIGHT
+@function line-height($line-height, $font-size) {
+	@return ($line-height / $font-size);
+}
+
+/*------------------------------------*\
+    // FONT STYLE MIXINS
+\*------------------------------------*/
+
+@mixin font($font-family, $font-style, $font-size, $font-weight, $line-height) {
+	font: {
+		family: $font-family;
+		style: $font-style;
+		size: $font-size / $base + rem;
+		weight: $font-weight;
+	}
+
+	line-height: $line-height;
+}
+
+/*------------------------------------*\
+            ALL HEADINGS OF SITE
+\*------------------------------------*/
+@mixin mainheadingblack {
+	@include font(family($basefont),
+		style('normal'),
+		size('s36'),
+		weight('semibold'),
+		line-height(46, size('s36')));
+}
+
+@mixin subheading {
+	@include font(family($basefont),
+		style('normal'),
+		size('s28'),
+		weight('semibold'),
+		line-height(46, size('s28')));
+	color: $black;
+}
+
+@mixin strategyTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s24'),
+		weight('semibold'),
+		line-height(40, size('s24')));
+	color: $textSecondary;
+}
+
+@mixin cardheading {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('medium'),
+		line-height(35, size('s20')));
+}
+
+/*------------------------------------*\
+            ALL TEXT SIZES
+\*------------------------------------*/
+@mixin bodyFont {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(28, size('s14')));
+	color: $textPrimary;
+}
+
+@mixin topBarLink {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(25, size('s14')));
+	color: $white;
+}
+
+@mixin subTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s18'),
+		weight('medium'),
+		line-height(32, size('s18')));
+	color: $white;
+}
+
+@mixin packageTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s24'),
+		weight('semibold'),
+		line-height(36, size('s24')));
+	color: $textSecondary;
+}
+
+@mixin privacyTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('medium'),
+		line-height(50, size('s20')));
+	color: $textSecondary;
+}
+
+@mixin privacySubTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s18'),
+		weight('medium'),
+		line-height(53, size('s18')));
+	color: $textSecondary;
+}
+
+@mixin contactTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s22'),
+		weight('semibold'),
+		line-height(52, size('s22')));
+}
+
+@mixin mobileText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(20, size('s14')));
+}
+
+@mixin inputText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(40, size('s14')));
+}
+
+@mixin mainMenuLink {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(20, size('s14')));
+	color: $textSecondary;
+}
+
+@mixin fontButton {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(32, size('s14')));
+}
+
+@mixin fontFaq {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(30, size('s14')));
+}
+
+@mixin textButton {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(60, size('s14')));
+}
+
+@mixin homePricingHeading {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('medium'),
+		line-height(32, size('base')));
+	color: $textSecondary;
+}
+
+@mixin strategyText {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('normal'),
+		line-height(30, size('base')));
+	color: $textPrimary;
+}
+
+@mixin buttonText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(30, size('s14')));
+}
+
+@mixin footerTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('semibold'),
+		line-height(32, size('s20')));
+	color: $white;
+}
+
+@mixin footerHeading {
+	@include font(family($basefont),
+		style('normal'),
+		size('s18'),
+		weight('semibold'),
+		line-height(32, size('s18')));
+	color: $white;
+}
+
+@mixin bannerText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s18'),
+		weight('medium'),
+		line-height(36, size('s18')));
+	color: $white;
+}
+
+@mixin footerLink {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(32, size('s14')));
+	color: $white;
+}
+
+@mixin homePricingText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(32, size('s14')));
+	color: $textPrimary;
+}
+
+@mixin buttonSmallText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(32, size('s14')));
+}
+
+@mixin sectionBadgeText {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('normal'),
+		line-height(33, size('base')));
+	color: $primary;
+}
+
+@mixin jobTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('semibold'),
+		line-height(55, size('s20')));
+	color: $textSecondary;
+}
+
+@mixin primeTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('medium'),
+		line-height(55, size('s20')));
+}
+
+@mixin helpText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s18'),
+		weight('normal'),
+		line-height(55, size('s18')));
+	color: $white;
+}
+
+@mixin badgeText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s12'),
+		weight('normal'),
+		line-height(55, size('s12')));
+	color: $white;
+}
+
+@mixin packageText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('semibold'),
+		line-height(55, size('s14')));
+}
+
+/*------------------------------------*\
+            SOLUTION CARD TEXT SIZES
+\*------------------------------------*/
+@mixin solutionCardTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('s20'),
+		weight('medium'),
+		line-height(38, size('s20')));
+	color: $textSecondary;
+}
+
+@mixin solutionCardText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(26, size('s14')));
+	color: $textPrimary;
+}
+
+@mixin solutionCardLinkText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('medium'),
+		line-height(26, size('s14')));
+	color: $primary;
+}
+
+/*------------------------------------*\
+            HOME BLOG TEXT SIZES
+\*------------------------------------*/
+
+@mixin homeBlogCardDateTime {
+	@include font(family($basefont),
+		style('normal'),
+		size('s14'),
+		weight('normal'),
+		line-height(31, size('s14')));
+	color: $textPrimary;
+}
+
+@mixin mobileTopbarText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s12'),
+		weight('normal'),
+		line-height(27, size('s12')));
+	color: $white;
+}
+
+@mixin errorText {
+	@include font(family($basefont),
+		style('normal'),
+		size('s12'),
+		weight('medium'),
+		line-height(27, size('s12')));
+}
+
+@mixin homeBlogCardTitle {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('medium'),
+		line-height(27, size('base')));
+	color: $textPrimary;
+}
+
+@mixin homeBlogCardReadme {
+	@include font(family($basefont),
+		style('normal'),
+		size('base'),
+		weight('medium'),
+		line-height(31, size('base')));
+	color: $textDanger;
+	text-transform: uppercase;
+}

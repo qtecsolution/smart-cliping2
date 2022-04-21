@@ -1,0 +1,301 @@
+// CARD SOLUTION
+.card-solution {
+    background: $white;
+    box-shadow: $box-shadow-1;
+    @include radius(5);
+
+    &-header {
+        @include flex-center;
+        height: length(185);
+
+        .bloglink {
+            @include square(length(90));
+            @include flex-center;
+
+            .card-thumbnail {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-body {
+        @include flex-center-column;
+        gap: length(20);
+        padding: length(0) length(30) length(50);
+
+        .solutionlink {
+            display: block;
+
+            .solution-title {
+                @include solutionCardTitle;
+                @include transitions;
+                text-align: center;
+
+                @include hover {
+                    color: $black;
+                }
+            }
+        }
+
+        .solution-card-text {
+            @include solutionCardText;
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+}
+
+// SOLUTION CARD
+.solution-card {
+    background: $white;
+    box-shadow: $box-shadow-1;
+    @include radius(5);
+
+    &-header {
+        @include flex-center;
+        height: length(165);
+
+        .bloglink {
+            @include square(length(54));
+            @include flex-center;
+
+            .card-thumbnail {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &-body {
+        @include flex-center-column;
+        gap: length(20);
+        padding: length(0) length(20) length(70);
+
+        .solutionlink {
+            display: block;
+
+            .solution-title {
+                @include solutionCardTitle;
+                @include transitions;
+                text-align: center;
+
+                @include hover {
+                    color: $black;
+                }
+            }
+        }
+
+        .solution-card-text {
+            @include solutionCardText;
+            margin-bottom: length(30);
+            text-align: center;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+
+        .solution-readmore {
+            @include solutionCardLinkText;
+            @include transitions;
+            text-align: center;
+
+            @include hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+// BLOG CARD
+.blog-card {
+    background: $white;
+    filter: $blog-shadow;
+    @include radius(5);
+    overflow: hidden;
+
+    &-header {
+        @include w100;
+        height: length(218);
+
+        .bloglink {
+            overflow: hidden;
+            @include wh100;
+
+            .blog-thumbnail {
+                @include w100;
+                @include transitiontransform;
+
+                @include hover {
+                    @include transform(scale(1.05));
+                }
+            }
+        }
+    }
+
+    &-body {
+        @include flex-column;
+        gap: length(10);
+        padding: length(16) length(20) length(30);
+
+        .date-time {
+            @include homeBlogCardDateTime;
+        }
+
+        .blog-title {
+            @include homeBlogCardTitle;
+            @include transitions;
+            margin-bottom: length(10);
+
+            @include hover {
+                color: $black;
+            }
+        }
+
+        .blog-readmore {
+            @include homeBlogCardReadme;
+            @include transitions;
+
+            @include hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.card-product {
+    @include flex-center-column;
+    gap: length(20);
+
+    &-header {
+        height: length(260);
+        @include radius(5);
+        overflow: hidden;
+
+        .beforeAfter {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &-body {
+        @include flex-center;
+        gap: length(20);
+    }
+}
+
+.card-detail {
+    @include flex-center-column;
+    gap: length(30);
+
+    .card-cap {
+        @include square(length(48));
+        @include flex-center;
+    }
+
+    &-body {
+        .title {
+            @include homePricingHeading;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+}
+
+.card-advantage {
+    @include flex-center-column;
+    gap: length(30);
+
+    &-header {
+        @include flex-center;
+
+        .thumb {
+            @include square(length(100));
+            @include circle;
+            overflow: hidden;
+
+            img {
+                @include wh100;
+            }
+        }
+    }
+
+    &-body {
+        @include flex-center-column;
+        gap: length(10);
+        text-align: center;
+
+        .title {
+            @include cardheading;
+            color: $black;
+        }
+
+        .text {
+            @include homeBlogCardTitle;
+            font-weight: normal;
+            color: $black;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+}
+
+.card-strategy {
+    @include flex-center-column;
+    gap: length(30);
+
+    &-header {
+        @include flex-center;
+
+        .thumb {
+            @include square(length(60));
+            @include circle;
+            overflow: hidden;
+
+            img {
+                @include wh100;
+            }
+        }
+    }
+
+    &-body {
+        @include flex-center-column;
+        gap: length(10);
+        text-align: center;
+
+        .title {
+            @include strategyTitle;
+        }
+
+        .text {
+            @include strategyText;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+}
+
+.card-client {
+    width: length(275);
+    height: length(90);
+    padding: length(0) length(80);
+    @include flex-center;
+    @include radius(10);
+
+    img {
+        max-width: 100%;
+    }
+}

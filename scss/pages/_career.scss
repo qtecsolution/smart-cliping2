@@ -1,0 +1,324 @@
+// CAREER BANNER
+.career-banner {
+    background: url(../images/career/career-banner/career-banner.svg) center center/cover;
+    padding: length(60) length(0) length(90);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .career-title {
+            @include mainheadingblack;
+            color: $white;
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .career-text {
+            @include bannerText;
+            letter-spacing: length(0.48);
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// CAREER ABOUT
+.career-about {
+    margin-bottom: length(160);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(80);
+    }
+
+    .aboutbox {
+        @include flex-column;
+        gap: length(20);
+
+        @include breakpoint(tablet991) {
+            margin-bottom: length(40);
+        }
+
+        .title {
+            @include subheading;
+
+            @include breakpoint(phone500) {
+                @include cardheading;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .career-album {
+        @include flex-column;
+        gap: length(30);
+
+        .album {
+            @include flex-center-vert;
+            gap: length(30);
+
+            @include breakpoint(tablet991) {
+                flex-direction: column;
+            }
+
+            .career-thumb {
+                overflow: hidden;
+                width: 50%;
+                @include radius(5);
+
+                @include breakpoint(tablet991) {
+                    width: 100%;
+                }
+
+                img {
+                    @include wh100;
+                    @include transitions;
+                    @include hover {
+                        @include transform(scale(1.05));
+                    }
+                }
+            }
+        }
+
+        .thumb {
+            .career-thumb {
+                overflow: hidden;
+                width: 100%;
+                @include radius(5);
+
+                img {
+                    @include wh100;
+                    @include transitions;
+                    @include hover {
+                        @include transform(scale(1.05));
+                    }
+                }
+            }
+        }
+    }
+}
+
+// JOB
+.job {
+    // margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-between;
+        align-items: flex-start;
+
+        @include breakpoint(tablet991) {
+            flex-direction: column;
+            gap: length(30);
+        }    
+
+        .job-details {
+            @include flex-column;
+            gap: length(20);
+            width: 65%;
+
+            @include breakpoint(tablet991) {
+                width: 100%;
+            }
+
+            .title {
+                @include jobTitle;
+
+                @include breakpoint(phone500) {
+                    @include cardheading;
+                    color: $textSecondary;
+                }
+            }
+
+            .text {
+                @include bodyFont;
+                letter-spacing: length(0.48);
+
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+        }
+
+        .job-select {
+            width: 35%;
+            @include flex-center-vert;
+            justify-content: flex-end;
+
+            @include breakpoint(tablet991) {
+                width: 100%;
+            }
+
+            .selectjob {
+                -moz-appearance: none;
+                -o-appearance: none;
+                -ms-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                cursor: pointer;
+                color: $white;
+                width: 100%;
+                background: $primary url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='20' height='16' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat 98.5% center;
+                @include bannerText;
+                font-size: length(18);
+                padding: length(8) length(20);
+                @include radius(4);
+
+                @include breakpoint(tablet991) {
+                    @include topBarLink;
+                }
+
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+        }
+    }
+}
+
+// JOB DETAILS
+.job-details {
+    margin-bottom: length(150);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(75);
+    }
+
+    &-content {
+        @include flex-column;
+        gap: length(50);
+
+        @include breakpoint(tablet991) {
+            gap: length(25);
+        }
+        
+        .detailbox {
+            @include flex-column;
+            gap: length(0);
+            
+            .titlebar {
+                @include flex-center-vert;
+                gap: length(20);
+
+                .textbox {
+                    @include primeTitle;
+                    color: $white;
+                    @include square(length(30));
+                    @include radius(3);
+                    @include flex-center;
+                    text-align: center;
+                    overflow: hidden;
+                    padding: length(10);
+                }
+
+                .primarybox {
+                    background: $primary-Bg;
+                }
+
+                .dangerbox {
+                    background: $textDanger;
+                }
+
+                .warningbox {
+                    background: $textWarning;
+                }
+
+                .title {
+                    @include primeTitle;
+                    color: $textSecondary;
+                }
+            }
+
+            .positions {
+                @include flex-between;
+            }
+
+            .position {
+                @include flex-center-vert;
+                gap: length(25);
+                margin-bottom: length(5);
+
+                &-title {
+                    @include jobTitle;
+                }
+
+                .job-badge {
+                    width: length(70);
+                    height: length(30);
+                    @include flex-center;
+                    text-align: center;
+                    padding: length(4) length(20);
+                    @include radius(4);
+                    @include badgeText;
+                }
+
+                .open {
+                    @include setBgColor($badgeBg, $primary);
+                }
+
+                .expired {
+                    @include setBgColor($warningBg, $warningColor);
+                }
+            }
+
+            .job-type {
+                @include flex-center-vert;
+                gap: length(20);
+
+                .type {
+                    @include bodyFont;
+                    letter-spacing: length(0.48);
+    
+                    @include breakpoint(phone500) {
+                        @include mobileText;
+                    }
+                }
+
+                .vacancy {
+                    @include bodyFont;
+                    letter-spacing: length(0.48);
+    
+                    @include breakpoint(phone500) {
+                        @include mobileText;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.offcanvas {
+    &-header {
+        padding: length(20) length(32);
+
+        .brand {
+            &-icon {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .btn-close {
+            opacity: 1;
+            background: transparent;
+            @include flex-center;
+            @include transitions;
+
+            svg {
+                path {
+                    @include transitions;
+                }
+            }
+
+            @include hover {
+                @include transform(rotate(360deg));
+
+                svg {
+                    path {
+                        fill: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &-body {
+        padding: length(0) length(32);
+
+        .mobilemenu {
+            // @include flex-column;
+            @include flex-center-column;
+            gap: length(30);
+            width: 100%;
+        }
+
+        .mobilelist {
+            @include list-vertical;
+            align-items: center;
+            gap: length(20);
+
+            &-link {
+                @include border-single(bottom, solid, 3, transparent);
+                padding-bottom: length(5);
+                @include mainMenuLink;
+                @include transitions;
+
+                &:hover:not(.active) {
+                    border-color: $primary;
+                    color: $primary;
+                }
+
+                &.active {
+                    border-color: $primary;
+                    color: $primary;
+                }
+            }
+        }
+
+        .registration {
+            @include breakpoint(tablet991) {
+                @include flex-center;
+            }
+        }
+    }
+}

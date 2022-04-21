@@ -1,0 +1,98 @@
+// PORTFOLIO BANNER
+.portfolio-banner {
+    background: url(../images/portfolio/portfolio-banner/portfolio-banner.svg) center center/cover;
+    padding: length(80) length(0);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .portfolio-title {
+            @include mainheadingblack;
+            color: $white;
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .portfolio-text {
+            @include bannerText;
+            text-align: center;
+            letter-spacing: length(0.48);
+            margin-bottom: length(34);
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+
+        .portfolio {
+            @include flex-center;
+            gap: length(20);
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// PORTFOLIO MAIN
+.portfolio-main {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(60);
+
+        .portfolio {
+            @include flex-center-column;
+            gap: length(20);
+            text-align: center;
+
+            &-title {
+                @include mainheadingblack;
+                color: $textSecondary;
+
+                @include breakpoint(tablet991) {
+                    @include cardheading;
+                }
+            }
+
+            &-text {
+                @include bodyFont;
+                letter-spacing: length(0.48);
+    
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+        }
+    }
+
+    .card-product {
+        margin-bottom: length(24);
+    }
+}

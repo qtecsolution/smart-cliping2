@@ -1,0 +1,173 @@
+// PRIVACY-POLICY BANNER
+.privacy-policy-banner {
+    background: url(../images/privacy-policy/privacy-policy-banner/privacy-policy-banner.svg) center center/cover;
+    padding: length(60) length(0) length(90);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .privacy-policy-title {
+            @include mainheadingblack;
+            color: $white;
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .privacy-policy-text {
+            @include bannerText;
+            letter-spacing: length(0.48);
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// PRIVACY-POLICY-INFO
+.privacy-policy-info {
+    margin-bottom: length(160);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(80);
+    }
+
+    .privacy-info {
+        @include flex-center-column;
+        align-items: flex-start;
+        @include h100;
+        gap: length(20);
+        
+        .title {
+            @include mainheadingblack;
+            color: $textSecondary;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .text {
+            @include bannerText;
+            color: $textPrimary;
+            letter-spacing: length(0.48);
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+                color: $textPrimary;
+                margin-bottom: length(40);
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+                color: $textPrimary;
+            }
+        }
+    }
+
+    .privacy-thumbnail {
+        @include radius(10);
+        overflow: hidden;
+
+        img {
+            @include wh100;
+            @include transitions;
+            @include hover {
+                @include transform(scale(1.05));
+            }
+        }
+    }
+}
+
+// PRIVACY-POLICY
+.privacy-policy {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-column;
+        gap: length(20);
+
+        .title {
+            @include mainheadingblack;
+            color: $textSecondary;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+            letter-spacing: length(0.48);
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+                color: $textSecondary;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+                color: $textSecondary;
+            }
+        }
+
+        .contentbox {
+            @include flex-column;
+            gap: length(20);
+
+            .title {
+                @include privacyTitle;
+            }
+
+            .subtitle {
+                @include privacySubTitle;
+            }
+
+            .details {
+                .text {
+                    @include bodyFont;
+                    letter-spacing: length(0.48);
+        
+                    @include breakpoint(tablet991) {
+                        @include topBarLink;
+                        color: $textSecondary;
+                    }
+        
+                    @include breakpoint(phone500) {
+                        @include mobileText;
+                        color: $textSecondary;
+                    }
+                }
+            }
+        }
+    }
+}

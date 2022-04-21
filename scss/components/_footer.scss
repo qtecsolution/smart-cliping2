@@ -1,0 +1,157 @@
+.footer {
+    background: $primary;
+    padding: length(80) length(0);
+
+    @include breakpoint(phone768) {
+        padding: length(60) length(0);
+    }
+
+    .divider {
+        background: $white;
+        opacity: 1;
+        margin: length(50) length(0);
+
+        @include breakpoint(phone768) {
+            margin: length(40) length(0);
+        }
+    }
+
+    .footer-details {
+        @include flex-column;
+        gap: length(40);
+
+        @include breakpoint(phone768) {
+            margin: 0 0 length(20);
+            gap: length(30);
+        }
+
+        .footerlink {
+            margin-top: length(-16);
+
+            @include breakpoint(phone768) {
+                margin-top: length(0);
+            }
+        }
+
+        .footer-text {
+            @include footerLink;
+            letter-spacing: length(0.32);
+            margin-top: length(-10);
+
+            @include breakpoint(laptop1100) {
+                font-size: length(14);
+            }
+
+            @include breakpoint(phone768) {
+                margin-top: length(0);
+            }
+        }
+    }
+
+    .footer-menu {
+        padding-left: length(40);
+        @include flex-column;
+        gap: length(50);
+
+        @include breakpoint(tablet991) {
+            padding-left: length(0);
+            margin: length(20) 0;
+            gap: length(30);
+        }
+
+        @include breakpoint(phone768) {
+            padding-left: length(0);
+            margin: length(20) 0;
+            gap: length(30);
+        }
+
+        .title {
+            @include footerTitle;
+            letter-spacing: length(0.32);
+        }
+
+        .footerlist {
+            &-item {
+                list-style: none;
+            }
+
+            &-link {
+                @include footerLink;
+                @include transitions;
+                letter-spacing: length(0.32);
+
+                @include breakpoint(laptop1100) {
+                    font-size: length(14);
+                }
+
+                @include hover {
+                    color: rgba($white, 0.75);
+                }
+            }
+        }
+
+        .contactlist {
+            @include flex-column;
+            gap: length(20);
+
+            &-item {
+                list-style: none;
+
+                .titlebox {
+                    @include flex-center-vert;
+                    gap: length(14);
+
+                    .title {
+                        @include footerHeading;
+                        letter-spacing: length(0.32);
+                    }
+                }
+            }
+
+            &-link {
+                @include footerLink;
+                @include transitions;
+                letter-spacing: length(0.32);
+
+                @include breakpoint(laptop1100) {
+                    font-size: length(14);
+                }
+
+                @include hover {
+                    color: rgba($white, 0.75);
+                }
+            }
+        }
+
+        .lists {
+            @include flex-column;
+            gap: length(20);
+        }
+
+        .sociallist {
+            @include list-horizontal;
+            gap: length(16);
+
+            &-link {
+                @include square(length(36));
+                @include circle;
+                @include flex-center;
+                overflow: hidden;
+
+                svg {
+                    @include wh100;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @include footerLink;
+        letter-spacing: length(0.32);
+        text-align: center;
+
+        @include breakpoint(laptop1100) {
+            font-size: length(14);
+        }
+    }
+}

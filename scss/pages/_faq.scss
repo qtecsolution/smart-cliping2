@@ -1,0 +1,134 @@
+// FAQ BANNER
+.faq-banner {
+    background: url(../images/faq/faq-banner/faq-banner.svg) center center/cover;
+    padding: length(60) length(0);
+    position: relative;
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    &-content {
+        @include flex-center-column;
+        gap: length(20);
+        position: relative;
+        z-index: 2;
+
+        .faq-title {
+            @include mainheadingblack;
+            color: $white;
+            text-align: center;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .faq-text {
+            @include bannerText;
+            text-align: center;
+            letter-spacing: length(0.48);
+            margin-bottom: length(34);
+
+            @include breakpoint(tablet991) {
+                @include topBarLink;
+            }
+
+            @include breakpoint(phone500) {
+                @include mobileText;
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh100;
+        background: rgba($black, 0.5);
+    }
+}
+
+// FAQ SECTION
+.faq {
+    margin-bottom: length(100);
+
+    @include breakpoint(tablet991) {
+        margin-bottom: length(50);
+    }
+
+    .accordion {
+        @include flex-column;
+        gap: length(20);
+
+        &-item {
+            border: none;
+        }
+
+        &-button {
+            @include setBgColor($white, $textSecondary);
+            @include buttonText;
+            letter-spacing: length(0.48);
+            padding: length(20) length(40);
+            @include border(solid, 1, $border-2);
+            @include radius(5);
+            @include flex-center-vert;
+            
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='10.135' viewBox='0 0 18 10.135'%3E%3Cpath id='Vector' d='M9.006,10.134a1.687,1.687,0,0,0,1.194-.5l7.488-7.691a1.149,1.149,0,0,0,0-1.61,1.1,1.1,0,0,0-1.588,0l-7.083,7.3L1.935.338a1.1,1.1,0,0,0-1.588,0,1.149,1.149,0,0,0,0,1.61L7.835,9.639A1.6,1.6,0,0,0,9.006,10.134Z' transform='translate(-0.018)' fill='%232a2a2a' fill-rule='evenodd'/%3E%3C/svg%3E ");
+            }
+            
+            &:not(.collapsed) {
+                @include setBgColor($white, $textSecondary);
+                @include buttonText;
+                letter-spacing: length(0.48);
+                box-shadow: none;
+                @include double-radius(top, left, 5, top, right, 5);
+                @include double-radius(bottom, left, 0, bottom, right, 0);
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cpath id='Vector' d='M6.184,7.508l-5.9-5.9A.936.936,0,0,1,1.605.282l5.9,5.9,5.9-5.9a.936.936,0,1,1,1.323,1.323l-5.9,5.9,5.9,5.9a.936.936,0,1,1-1.323,1.323l-5.9-5.9-5.9,5.9A.936.936,0,1,1,.282,13.41Z' transform='translate(-0.008 -0.008)' fill='%232a2a2a' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+                }
+            }
+        }
+
+        &-body {
+            @include border(solid, 1, $border-2);
+            border-top: 0;
+            @include double-radius(bottom, left, 5, bottom, right, 5);
+            padding: length(20) length(20) length(20) length(40);
+            @include flex-column;
+            gap: length(48);
+
+            .text {
+                @include fontFaq;
+                color: $textSecondary;
+                letter-spacing: length(0.48);
+
+                @include breakpoint(phone500) {
+                    @include mobileText;
+                }
+            }
+
+            .faqlist {
+                padding-left: length(15);
+
+                &-item {
+                    @include fontFaq;
+                    color: $textSecondary;
+                    letter-spacing: length(0.48);
+
+                    @include breakpoint(phone500) {
+                        @include mobileText;
+                    }
+                }
+            }
+        }
+    }
+}

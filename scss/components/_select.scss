@@ -1,0 +1,39 @@
+.dd-container {
+    width: length(70) !important;
+
+    .dd-select {
+        width: length(70) !important;
+        border: none;
+        background: $white;
+
+        .dd-selected {
+            padding: length(8) !important;
+            background: $white;
+
+            .dd-selected-image {
+                width: length(30) !important;
+                height: length(21) !important;
+                float: none !important;
+                max-width: 100% !important;
+                margin: 0 !important;
+            }
+        }
+    }
+
+    .dd-options {
+        width: length(70) !important;
+        border: 0;
+
+        .dd-option {
+            padding: length(8) 0 !important;
+            @include flex-center;
+
+            .dd-option-image {
+                width: length(30) !important;
+                height: length(21) !important;
+                margin-right: 0 !important;
+                float: none;
+            }
+        }
+    }
+}

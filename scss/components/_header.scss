@@ -1,0 +1,135 @@
+.header {
+    @include border-single(bottom, solid, 1, $border-1);
+    height: length(105);
+    background: $white;
+    @include flex-center-vert;
+
+    @include breakpoint(tablet991) {
+        height: length(100);
+    }
+
+    @include breakpoint(phone575) {
+        height: length(68);
+    }
+
+    &-nav {
+        @include flex-center-vert;
+        gap: length(25);
+        height: length(105);
+
+        @include breakpoint(tablet991) {
+            height: length(100);
+        }
+
+        @include breakpoint(phone575) {
+            height: length(68);
+        }
+
+        .brand {
+            &-icon {
+                @include breakpoint(phone575) {
+                    max-width: length(100);
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .headerlist {
+            @include list-horizontal;
+            flex-grow: 100;
+            justify-content: flex-end;
+            gap: length(30);
+
+            @include breakpoint(tablet991) {
+                display: none;
+            }
+
+            &-link {
+                @include border-single(bottom, solid, 3, transparent);
+                padding: length(43.2) 0;
+                @include mainMenuLink;
+                @include transitions;
+
+                &:hover:not(.active) {
+                    border-color: $primary;
+                    color: $primary;
+                }
+
+                &.active {
+                    border-color: $primary;
+                    color: $primary;
+                }
+            }
+
+            .smartdropdown {
+                position: relative;
+
+                @include hover {
+                    .smartdropdown-menu {
+                        @include flex-column;
+                    }
+                }
+
+                &-menu {
+                    position: absolute;
+                    top: calc(100% + .0625rem);
+                    top: 100%;
+                    left: 0;
+                    background: $white;
+                    min-width: length(200);
+                    box-shadow: $box-shadow-1;
+                    display: none;
+
+                    .dropdownlink {
+                        padding: length(8) length(16);
+                        @include errorText;
+                        color: $textSecondary;
+                        @include transitions;
+
+                        @include hover {
+                            background: $hoverBg;
+                        }
+                    }
+                }
+            }
+        }
+
+        .registration {
+            @include breakpoint(tablet991) {
+                display: none;
+            }
+        }
+
+        .select-language {
+            @include breakpoint(tablet991) {
+                margin-left: auto;
+            }
+        }
+
+        .mobileicon {
+            @include transparent-button;
+            display: none;
+
+            svg {
+                rect {
+                    @include transitions;
+                }
+            }
+
+            @include hover {
+                svg {
+                    rect {
+                        fill: $primary;
+                    }
+                }
+            }
+
+            @include breakpoint(tablet991) {
+                display: block;
+            }
+        }
+    }
+}

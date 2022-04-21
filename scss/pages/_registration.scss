@@ -1,0 +1,137 @@
+// REGISTRATION
+.registration {
+    padding: length(100) length(0);
+
+    @include breakpoint(tablet991) {
+        padding: length(50) length(0);
+    }
+}
+
+.registration {
+    .register-info {
+        .title {
+            @include mainheadingblack;
+            margin-bottom: length(25);
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+            }
+        }
+
+        .text {
+            @include bodyFont;
+            margin-bottom: length(82);
+        }
+
+        .login-detail {
+            @include flex-center-vert;
+            gap: length(20);
+            @include textButton;
+
+            .login-text {
+                @include mobileText;
+                color: inherit;
+            }
+    
+            .btn-text {
+                @include mobileText;
+            }
+        }
+    }
+
+    &-info {
+        @include flex-column;
+        gap: length(40);
+
+        .title {
+            @include mainheadingblack;
+            display: none;
+
+            @include breakpoint(tablet991) {
+                @include cardheading;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .login-detail {
+            @include textButton;
+            display: none;
+
+            @include breakpoint(tablet991) {
+                @include flex-center;
+                gap: length(20);
+            }
+
+            .login-text {
+                @include mobileText;
+                color: inherit;
+            }
+    
+            .btn-text {
+                @include mobileText;
+            }
+        }
+    }
+
+    &-form {
+        @include flex-column;
+        gap: length(20);
+
+        .inputbox {
+            @include flex-column;
+            gap: length(4);
+
+            .form-floating {
+                .form-control {
+                    @include inputText;
+                    @include setBgColor($inputBg, $textPrimary);
+                    @include border(solid, 1, $inputBorder);
+                    padding: length(16);
+                    height: 100%;
+                    
+
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                        color: $textPrimary;
+                    }
+                }
+
+                label {
+                    font-size: length(14);
+                    color: $textPlaceholder;
+                }
+            }
+
+            .error-message {
+                @include errorText;
+                color: $textDanger;
+                display: none;
+            }
+
+            &.error {
+                .form-floating {
+                    .form-control {
+                        border-color: $textDanger;
+                    }
+    
+                    label {
+                        color: $textDanger;
+                        display: block;
+                    }
+                }
+    
+                .error-message {
+                    display: block;
+                }
+            }
+        }
+
+        .submitbox {
+            margin: length(30) length(0);
+        }
+
+
+    }
+}
