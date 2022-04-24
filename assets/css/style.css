@@ -327,9 +327,9 @@ body {
   overflow-x: hidden;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -485,9 +485,9 @@ textarea {
 .topbar-content .contactlist-link .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.78571;
+  line-height: 2.08333;
   color: #ffffff;
   color: #ffffff;
   -webkit-transition: all 350ms ease-in-out;
@@ -535,9 +535,9 @@ textarea {
 .topbar-content .topbarlist-link {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.78571;
+  line-height: 2.08333;
   color: #ffffff;
   color: #ffffff;
   -webkit-transition: all 350ms ease-in-out;
@@ -623,9 +623,9 @@ textarea {
   padding: 2.09375rem 0rem;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 1.42857;
+  line-height: 1.66667;
   color: #2A2A2A;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -719,9 +719,9 @@ textarea {
 .btn-clip {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 2.28571;
+  line-height: 2.66667;
   border-radius: 0.3125rem;
   border-radius: 0.3125rem;
   display: -webkit-box;
@@ -754,9 +754,9 @@ textarea {
   border-radius: 0.3125rem;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 2.0625;
+  line-height: 2.35714;
   color: #00AEEF;
   text-align: center;
 }
@@ -995,9 +995,9 @@ textarea {
   border-radius: 1.5625rem;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.78571;
+  line-height: 2.08333;
   color: #ffffff;
   background: #ffffff;
   color: #00AEEF;
@@ -1080,9 +1080,9 @@ textarea {
 .card-solution-body .solutionlink .solution-title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.9;
+  line-height: 2.71429;
   color: #2A2A2A;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -1107,9 +1107,9 @@ textarea {
   .card-solution-body .solution-card-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -1178,9 +1178,9 @@ textarea {
 .solution-card-body .solutionlink .solution-title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.9;
+  line-height: 2.71429;
   color: #2A2A2A;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -1206,9 +1206,9 @@ textarea {
   .solution-card-body .solution-card-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -1286,9 +1286,9 @@ textarea {
 .blog-card-body .blog-title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.6875;
+  line-height: 1.92857;
   color: #646464;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -1302,9 +1302,9 @@ textarea {
 .blog-card-body .blog-readmore {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.9375;
+  line-height: 2.21429;
   color: #EC2020;
   text-transform: uppercase;
   -webkit-transition: all 350ms ease-in-out;
@@ -1394,8 +1394,7 @@ textarea {
   font-family: "Poppins";
   font-style: normal;
   font-size: 1rem;
-  font-weight: 500;
-  line-height: 2;
+  line-height: 2.28571;
   color: #2A2A2A;
 }
 
@@ -1403,9 +1402,9 @@ textarea {
   .card-detail-body .title {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -1480,9 +1479,9 @@ textarea {
 .card-advantage-body .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.6875;
+  line-height: 1.92857;
   color: #646464;
   font-weight: normal;
   color: #000000;
@@ -1492,9 +1491,9 @@ textarea {
   .card-advantage-body .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -1569,9 +1568,9 @@ textarea {
 .card-strategy-body .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1.875;
+  line-height: 2.14286;
   color: #646464;
 }
 
@@ -1579,9 +1578,9 @@ textarea {
   .card-strategy-body .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -1655,9 +1654,9 @@ textarea {
 .plan-header .titlebox .plantitle {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2.5;
+  line-height: 3.125;
   color: #2A2A2A;
   color: #ffffff;
   line-height: 1.3;
@@ -1714,9 +1713,9 @@ textarea {
 .plan-body .planlist-item {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.07143;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1813,9 +1812,9 @@ textarea {
   .cardnav-title {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: normal;
-    line-height: 1;
+    line-height: 1.07143;
   }
 }
 
@@ -1873,18 +1872,12 @@ textarea {
 .footer .footer-details .footer-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 2.28571;
+  line-height: 2;
   color: #ffffff;
   letter-spacing: 0.02rem;
   margin-top: -0.625rem;
-}
-
-@media screen and (max-width: 68.75rem) {
-  .footer .footer-details .footer-text {
-    font-size: 0.875rem;
-  }
 }
 
 @media screen and (max-width: 48rem) {
@@ -1924,9 +1917,9 @@ textarea {
 .footer .footer-menu .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.6;
+  line-height: 1.71429;
   color: #ffffff;
   letter-spacing: 0.02rem;
 }
@@ -1938,19 +1931,13 @@ textarea {
 .footer .footer-menu .footerlist-link {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 2.28571;
+  line-height: 2;
   color: #ffffff;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
   letter-spacing: 0.02rem;
-}
-
-@media screen and (max-width: 68.75rem) {
-  .footer .footer-menu .footerlist-link {
-    font-size: 0.875rem;
-  }
 }
 
 .footer .footer-menu .footerlist-link:not([disabled]):hover {
@@ -1985,9 +1972,9 @@ textarea {
 .footer .footer-menu .contactlist-item .titlebox .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.77778;
+  line-height: 1.71429;
   color: #ffffff;
   letter-spacing: 0.02rem;
 }
@@ -1995,19 +1982,13 @@ textarea {
 .footer .footer-menu .contactlist-link {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 2.28571;
+  line-height: 2;
   color: #ffffff;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
   letter-spacing: 0.02rem;
-}
-
-@media screen and (max-width: 68.75rem) {
-  .footer .footer-menu .contactlist-link {
-    font-size: 0.875rem;
-  }
 }
 
 .footer .footer-menu .contactlist-link:not([disabled]):hover {
@@ -2062,18 +2043,12 @@ textarea {
 .footer .copyright {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 2.28571;
+  line-height: 2;
   color: #ffffff;
   letter-spacing: 0.02rem;
   text-align: center;
-}
-
-@media screen and (max-width: 68.75rem) {
-  .footer .copyright {
-    font-size: 0.875rem;
-  }
 }
 
 .dd-container {
@@ -2331,9 +2306,9 @@ textarea {
   padding-bottom: 0.3125rem;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 1.42857;
+  line-height: 1.66667;
   color: #2A2A2A;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -2370,18 +2345,18 @@ textarea {
 .smartcrumb .breadcrumb-item {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.07143;
   color: #2A2A2A;
 }
 
 .smartcrumb .breadcrumb-item a {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1.07143;
   color: #2A2A2A;
 }
 
@@ -2467,9 +2442,9 @@ textarea {
 .home-banner .banner-content .content-head .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
 }
 
@@ -2477,9 +2452,9 @@ textarea {
   .home-banner .banner-content .content-head .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
     color: #2A2A2A;
     text-align: center;
@@ -2490,9 +2465,9 @@ textarea {
   .home-banner .banner-content .content-head .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -2561,8 +2536,7 @@ textarea {
   font-family: "Poppins";
   font-style: normal;
   font-size: 1rem;
-  font-weight: 500;
-  line-height: 2;
+  line-height: 2.28571;
   color: #2A2A2A;
 }
 
@@ -2668,9 +2642,9 @@ textarea {
 .home-services .service-header .service-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   text-align: center;
 }
@@ -2679,9 +2653,9 @@ textarea {
   .home-services .service-header .service-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -2747,9 +2721,9 @@ textarea {
 .home-portfolio .portfolio-header .portfolio-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   text-align: center;
 }
@@ -2758,9 +2732,9 @@ textarea {
   .home-portfolio .portfolio-header .portfolio-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -2831,9 +2805,9 @@ textarea {
 .home-partner .partner-header .partner-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   text-align: center;
 }
@@ -2842,9 +2816,9 @@ textarea {
   .home-partner .partner-header .partner-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -2945,9 +2919,9 @@ textarea {
 .home-video .details .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   margin-bottom: 2.125rem;
 }
@@ -2962,9 +2936,9 @@ textarea {
   .home-video .details .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3128,9 +3102,9 @@ textarea {
 .home-service .services .service .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
 }
 
@@ -3138,9 +3112,9 @@ textarea {
   .home-service .services .service .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3544,9 +3518,9 @@ textarea {
 .about-banner-content .about-titles .subtitle {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.77778;
+  line-height: 1.71429;
   color: #ffffff;
   text-align: center;
 }
@@ -3555,9 +3529,9 @@ textarea {
   .about-banner-content .about-titles .subtitle {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-weight: 500;
-    line-height: 2;
+    line-height: 2.57143;
     color: #ffffff;
   }
 }
@@ -3565,9 +3539,9 @@ textarea {
 .about-banner-content .about-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -3577,9 +3551,9 @@ textarea {
   .about-banner-content .about-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -3588,9 +3562,9 @@ textarea {
   .about-banner-content .about-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3658,9 +3632,9 @@ textarea {
 .about-us .about-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
 }
 
@@ -3668,9 +3642,9 @@ textarea {
   .about-us .about-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3769,9 +3743,9 @@ textarea {
 .our-mission .mission-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
 }
 
@@ -3779,9 +3753,9 @@ textarea {
   .our-mission .mission-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3840,9 +3814,9 @@ textarea {
 .contact-banner-content .contact-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -3852,9 +3826,9 @@ textarea {
   .contact-banner-content .contact-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -3863,9 +3837,9 @@ textarea {
   .contact-banner-content .contact-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -3903,18 +3877,18 @@ textarea {
 .contact-form .inputbox .form-floating .form-select {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.85714;
+  line-height: 3.33333;
 }
 
 .contact-form .inputbox .form-control,
 .contact-form .inputbox .form-select {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.85714;
+  line-height: 3.33333;
   border: solid 0.0625rem #e6e6e6;
   background: #f8f8f8;
   color: #646464;
@@ -3951,17 +3925,17 @@ textarea {
 .contact-form .inputbox .input-group select {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.85714;
+  line-height: 3.33333;
 }
 
 .contact-form .inputbox .form-select {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.85714;
+  line-height: 3.33333;
   -moz-appearance: none;
   -o-appearance: none;
   -ms-appearance: none;
@@ -4120,9 +4094,9 @@ textarea {
 .contact-info .info .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 2.36364;
+  line-height: 2.88889;
   color: #2A2A2A;
   text-align: center;
 }
@@ -4130,9 +4104,9 @@ textarea {
 .contact-info .info .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -4180,9 +4154,9 @@ textarea {
 .contact-info .infobox .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -4195,9 +4169,9 @@ textarea {
 .contact-info .infobox .contactlist-link {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -4264,9 +4238,9 @@ textarea {
 .career-banner-content .career-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -4276,9 +4250,9 @@ textarea {
   .career-banner-content .career-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -4287,9 +4261,9 @@ textarea {
   .career-banner-content .career-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4351,9 +4325,9 @@ textarea {
 .career-about .aboutbox .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
 }
 
@@ -4361,9 +4335,9 @@ textarea {
   .career-about .aboutbox .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4490,9 +4464,9 @@ textarea {
 .job-content .job-details .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 2.75;
+  line-height: 3.92857;
   color: #2A2A2A;
 }
 
@@ -4510,9 +4484,9 @@ textarea {
 .job-content .job-details .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -4521,9 +4495,9 @@ textarea {
   .job-content .job-details .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4558,9 +4532,9 @@ textarea {
   background: #00AEEF url("data:image/svg+xml;utf8,<svg viewBox='0 0 140 140' width='20' height='16' xmlns='http://www.w3.org/2000/svg'><g><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z' fill='white'/></g></svg>") no-repeat 98.5% center;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   font-size: 1.125rem;
   padding: 0.5rem 1.25rem;
@@ -4572,9 +4546,9 @@ textarea {
   .job-content .job-select .selectjob {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -4583,9 +4557,9 @@ textarea {
   .job-content .job-select .selectjob {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4640,9 +4614,9 @@ textarea {
 .job-details-content .detailbox .titlebar .textbox {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2.75;
+  line-height: 3.92857;
   color: #ffffff;
   height: 1.875rem;
   width: 1.875rem;
@@ -4677,9 +4651,9 @@ textarea {
 .job-details-content .detailbox .titlebar .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2.75;
+  line-height: 3.92857;
   color: #2A2A2A;
 }
 
@@ -4706,9 +4680,9 @@ textarea {
 .job-details-content .detailbox .position-title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 2.75;
+  line-height: 3.92857;
   color: #2A2A2A;
 }
 
@@ -4759,9 +4733,9 @@ textarea {
 .job-details-content .detailbox .job-type .type {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -4770,18 +4744,18 @@ textarea {
   .job-details-content .detailbox .job-type .type {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
 .job-details-content .detailbox .job-type .vacancy {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -4790,9 +4764,9 @@ textarea {
   .job-details-content .detailbox .job-type .vacancy {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4851,9 +4825,9 @@ textarea {
 .blog-banner-content .blog-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.03rem;
@@ -4864,9 +4838,9 @@ textarea {
   .blog-banner-content .blog-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -4875,9 +4849,9 @@ textarea {
   .blog-banner-content .blog-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -4949,9 +4923,9 @@ textarea {
 .faq-banner-content .faq-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.03rem;
@@ -4962,9 +4936,9 @@ textarea {
   .faq-banner-content .faq-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -4973,9 +4947,9 @@ textarea {
   .faq-banner-content .faq-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5084,9 +5058,9 @@ textarea {
 .faq .accordion-body .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.14286;
+  line-height: 2.5;
   color: #2A2A2A;
   letter-spacing: 0.03rem;
 }
@@ -5095,9 +5069,9 @@ textarea {
   .faq .accordion-body .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5108,9 +5082,9 @@ textarea {
 .faq .accordion-body .faqlist-item {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.14286;
+  line-height: 2.5;
   color: #2A2A2A;
   letter-spacing: 0.03rem;
 }
@@ -5119,9 +5093,9 @@ textarea {
   .faq .accordion-body .faqlist-item {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5180,9 +5154,9 @@ textarea {
 .portfolio-banner-content .portfolio-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0.03rem;
@@ -5193,9 +5167,9 @@ textarea {
   .portfolio-banner-content .portfolio-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -5204,9 +5178,9 @@ textarea {
   .portfolio-banner-content .portfolio-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5299,9 +5273,9 @@ textarea {
 .portfolio-main-content .portfolio-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -5310,9 +5284,9 @@ textarea {
   .portfolio-main-content .portfolio-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5348,9 +5322,9 @@ textarea {
 .portfolioitem-header p {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.71429;
   color: #2A2A2A;
   cursor: text;
 }
@@ -5358,9 +5332,9 @@ textarea {
 .portfolioitem-header p a {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.71429;
   color: #332e57;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -5373,9 +5347,9 @@ textarea {
 .portfolioitem-header a {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.71429;
   color: #332e57;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
@@ -5471,9 +5445,9 @@ textarea {
 .privacy-policy-banner-content .privacy-policy-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -5483,9 +5457,9 @@ textarea {
   .privacy-policy-banner-content .privacy-policy-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -5494,9 +5468,9 @@ textarea {
   .privacy-policy-banner-content .privacy-policy-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -5562,9 +5536,9 @@ textarea {
 .privacy-policy-info .privacy-info .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   color: #646464;
   letter-spacing: 0.03rem;
@@ -5574,9 +5548,9 @@ textarea {
   .privacy-policy-info .privacy-info .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
     color: #646464;
     margin-bottom: 2.5rem;
@@ -5587,9 +5561,9 @@ textarea {
   .privacy-policy-info .privacy-info .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     color: #646464;
   }
 }
@@ -5655,9 +5629,9 @@ textarea {
 .privacy-policy-content .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -5666,9 +5640,9 @@ textarea {
   .privacy-policy-content .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
     color: #2A2A2A;
   }
@@ -5678,9 +5652,9 @@ textarea {
   .privacy-policy-content .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     color: #2A2A2A;
   }
 }
@@ -5699,27 +5673,27 @@ textarea {
 .privacy-policy-content .contentbox .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2.5;
+  line-height: 3.125;
   color: #2A2A2A;
 }
 
 .privacy-policy-content .contentbox .subtitle {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 2.94444;
+  line-height: 3.3125;
   color: #2A2A2A;
 }
 
 .privacy-policy-content .contentbox .details .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   letter-spacing: 0.03rem;
 }
@@ -5728,9 +5702,9 @@ textarea {
   .privacy-policy-content .contentbox .details .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
     color: #2A2A2A;
   }
@@ -5740,9 +5714,9 @@ textarea {
   .privacy-policy-content .contentbox .details .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     color: #2A2A2A;
   }
 }
@@ -5777,9 +5751,9 @@ textarea {
 .pricing-content .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 2.36364;
+  line-height: 2.88889;
   color: #2A2A2A;
   text-align: center;
 }
@@ -5850,9 +5824,9 @@ textarea {
   .pricing-content .pricing-box .package-body .package-info {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
     font-weight: 600;
     color: #2A2A2A;
@@ -5926,9 +5900,9 @@ textarea {
 .pricing-info-content .titlebox .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 2;
   color: #2A2A2A;
 }
 
@@ -5994,9 +5968,9 @@ textarea {
 .pricing-help .helpbox .title {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 2.36364;
+  line-height: 2.88889;
   color: #ffffff;
 }
 
@@ -6009,9 +5983,9 @@ textarea {
 .pricing-help .helpbox .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 3.05556;
+  line-height: 3.92857;
   color: #ffffff;
 }
 
@@ -6066,9 +6040,9 @@ textarea {
 .registration .register-info .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   margin-bottom: 5.125rem;
 }
@@ -6091,18 +6065,18 @@ textarea {
 .registration .register-info .login-detail .login-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.66667;
   color: inherit;
 }
 
 .registration .register-info .login-detail .btn-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.66667;
 }
 
 .registration-info {
@@ -6164,18 +6138,18 @@ textarea {
 .registration-info .login-detail .login-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.66667;
   color: inherit;
 }
 
 .registration-info .login-detail .btn-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 1.42857;
+  line-height: 1.66667;
 }
 
 .registration-form {
@@ -6203,9 +6177,9 @@ textarea {
 .registration-form .inputbox .form-floating .form-control {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2.85714;
+  line-height: 3.33333;
   background: #f8f8f8;
   color: #646464;
   border: solid 0.0625rem #e6e6e6;
@@ -6307,9 +6281,9 @@ textarea {
 .service-banner-content .service-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 2;
+  line-height: 2.57143;
   color: #ffffff;
   letter-spacing: 0.03rem;
   text-align: center;
@@ -6320,9 +6294,9 @@ textarea {
   .service-banner-content .service-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.78571;
+    line-height: 2.08333;
     color: #ffffff;
   }
 }
@@ -6331,9 +6305,9 @@ textarea {
   .service-banner-content .service-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
   }
 }
 
@@ -6424,9 +6398,9 @@ textarea {
 .service-quality .qualitydetails .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   margin-bottom: 1.25rem;
 }
@@ -6435,9 +6409,9 @@ textarea {
   .service-quality .qualitydetails .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     text-align: center;
   }
 }
@@ -6557,9 +6531,9 @@ textarea {
 .service-inquire .inquire-titles .subtitle {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: normal;
-  line-height: 2.0625;
+  line-height: 2.35714;
   color: #00AEEF;
   color: #000000;
 }
@@ -6568,9 +6542,9 @@ textarea {
   .service-inquire .inquire-titles .subtitle {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 2;
+    line-height: 2.33333;
     color: #646464;
     color: #000000;
     text-align: center;
@@ -6580,9 +6554,9 @@ textarea {
 .service-inquire .inquire-text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   margin-bottom: 1.875rem;
 }
@@ -6591,9 +6565,9 @@ textarea {
   .service-inquire .inquire-text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     text-align: center;
   }
 }
@@ -6713,9 +6687,9 @@ textarea {
 .service-precision .precision .text {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  line-height: 2;
+  line-height: 2.33333;
   color: #646464;
   margin-bottom: 1.875rem;
 }
@@ -6724,9 +6698,9 @@ textarea {
   .service-precision .precision .text {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: normal;
-    line-height: 1.42857;
+    line-height: 1.66667;
     text-align: center;
   }
 }

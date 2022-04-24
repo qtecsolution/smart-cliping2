@@ -38,10 +38,6 @@
             letter-spacing: length(0.32);
             margin-top: length(-10);
 
-            @include breakpoint(laptop1100) {
-                font-size: length(14);
-            }
-
             @include breakpoint(phone768) {
                 margin-top: length(0);
             }
@@ -79,11 +75,6 @@
                 @include footerLink;
                 @include transitions;
                 letter-spacing: length(0.32);
-
-                @include breakpoint(laptop1100) {
-                    font-size: length(14);
-                }
-
                 @include hover {
                     color: rgba($white, 0.75);
                 }
@@ -112,10 +103,6 @@
                 @include footerLink;
                 @include transitions;
                 letter-spacing: length(0.32);
-
-                @include breakpoint(laptop1100) {
-                    font-size: length(14);
-                }
 
                 @include hover {
                     color: rgba($white, 0.75);
@@ -149,9 +136,5 @@
         @include footerLink;
         letter-spacing: length(0.32);
         text-align: center;
-
-        @include breakpoint(laptop1100) {
-            font-size: length(14);
-        }
     }
 }
