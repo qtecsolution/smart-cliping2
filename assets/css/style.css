@@ -3068,7 +3068,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3.125rem;
+  gap: 1.125rem;
   height: 100%;
 }
 
@@ -3080,13 +3080,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.25rem;
-}
-
-@media screen and (max-width: 31.25rem) {
-  .home-service .services .service {
-    gap: 0.625rem;
-  }
+  gap: 0.625rem;
 }
 
 .home-service .services .service .title {

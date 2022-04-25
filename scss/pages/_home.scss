@@ -393,17 +393,13 @@
 
     .services {
         @include flex-column;
-        gap: length(50);
+        gap: length(18);
         height: 100%;
 
         .service {
             @include flex-column;
-            gap: length(20);
-
-            @include breakpoint(phone500) {
-                gap: length(10);
-            }
-
+            gap: length(10);
+            
             .title {
                 @include cardheading;
                 font-weight: 600;
