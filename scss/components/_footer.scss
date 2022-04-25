@@ -1,18 +1,18 @@
 .footer {
     background: $primary;
-    padding: length(80) length(0);
+    padding: length(48) length(0) length(24);
 
     @include breakpoint(phone768) {
-        padding: length(60) length(0);
+        padding: length(36) length(0) length(20);
     }
 
     .divider {
         background: $white;
         opacity: 1;
-        margin: length(50) length(0);
+        margin: length(32) length(0);
 
         @include breakpoint(phone768) {
-            margin: length(40) length(0);
+            margin: length(20) length(0);
         }
     }
 
