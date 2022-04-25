@@ -393,13 +393,13 @@
 
     .services {
         @include flex-column;
-        gap: length(18);
+        gap: length(16);
         height: 100%;
 
         .service {
             @include flex-column;
             gap: length(10);
-            
+
             .title {
                 @include cardheading;
                 font-weight: 600;

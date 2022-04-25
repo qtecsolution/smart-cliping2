@@ -3068,7 +3068,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.125rem;
+  gap: 1rem;
   height: 100%;
 }
 
